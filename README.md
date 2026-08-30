@@ -1,6 +1,6 @@
-# Speed (Vitesse)
+# Spit (Vitesse)
 
-Real-time two-player Speed card game with anonymous lobby codes, an authoritative in-memory server, and a Vite React client.
+Real-time two-player Spit card game with anonymous lobby codes, an authoritative in-memory server, and a Vite React client.
 
 ## Stack
 
