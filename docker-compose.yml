@@ -1,0 +1,22 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    environment:
+      PORT: "8080"
+      CLIENT_ORIGIN: "http://localhost:5173"
+    ports:
+      - "8080:8080"
+  client:
+    image: node:20-bookworm
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "npm install && npm run dev --workspace client -- --host 0.0.0.0"
+    environment:
+      VITE_WS_URL: ws://localhost:8080
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server

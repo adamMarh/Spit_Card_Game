@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/CardView.tsx","./src/components/DraggableCard.tsx","./src/components/GameTable.tsx","./src/lib/ws.ts","./src/store/gameStore.ts"],"version":"5.9.3"}
